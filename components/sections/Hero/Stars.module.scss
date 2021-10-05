@@ -1,0 +1,96 @@
+@import "styles/util/base";
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: $heightHero;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.star {
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+.starAnimated1 {
+  animation: twinkle-anim1 6s 0s ease-in infinite;
+}
+.starAnimated2 {
+  animation: twinkle-anim2 6s 0s ease-in infinite;
+}
+.starAnimated3 {
+  animation: twinkle-anim3 6s 0s ease-in infinite;
+}
+
+@keyframes twinkle-anim1 {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale(100%);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scale(120%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(200%);
+    opacity: 0;
+  }
+}
+
+@keyframes twinkle-anim2 {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(100%);
+    opacity: 0.9;
+  }
+
+  70% {
+    transform: scale(120%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(200%);
+    opacity: 0;
+  }
+}
+
+@keyframes twinkle-anim3 {
+  0% {
+    transform: scale(0%);
+    opacity: 0;
+  }
+
+  10% {
+    transform: scale(100%);
+    opacity: 0.9;
+  }
+
+  90% {
+    transform: scale(120%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(400%);
+    opacity: 0;
+  }
+}
