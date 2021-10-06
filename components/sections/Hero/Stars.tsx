@@ -4,8 +4,8 @@ import styles from "./Stars.module.scss";
 type thisProps = {
   className?: any;
 };
-const numStaticStars = 70;
-const numDynamicStars = 30;
+const numStaticStars = 100;
+const numDynamicStars = 40;
 const supernovaResetMs = 6000; // Sync with css duration
 export default function Stars({ className }: thisProps) {
   const [staticStars, setStaticStars] = useState<any[]>([]);
@@ -28,13 +28,16 @@ export default function Stars({ className }: thisProps) {
     const randomTop = Math.random() * 100 + "vh";
     const randomLeft = Math.random() * 100 + "vw";
     const randomSize = Math.random() * 10 + 1 + "px";
+    const possibleColors = ["#edc1b4", "#ede7b4", "#b4cded", "white"];
+    const randomColor =
+      possibleColors[Math.floor(Math.random() * possibleColors.length)];
     const styleProp = {
       top: randomTop,
       left: randomLeft,
       height: randomSize,
       width: randomSize,
+      backgroundColor: randomColor,
     };
-
     return styleProp;
   }
   function resetStars() {
