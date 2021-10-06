@@ -1,0 +1,47 @@
+@import "styles/util/base";
+@import "./HeroText.module.scss";
+
+$sizeEarthImage: 12rem;
+.container {
+  width: calc($widthCenter - $widthTextContainer);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .meteor {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+
+  .rocket {
+    animation: rotate1 6s 0s linear infinite;
+  }
+
+  .plane {
+    animation: rotate1 12s 0s linear infinite;
+  }
+
+  .imgContainerEarth {
+    margin-top: 2rem;
+    width: $sizeEarthImage;
+    height: $sizeEarthImage;
+    position: relative;
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

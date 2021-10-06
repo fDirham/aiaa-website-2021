@@ -1,0 +1,58 @@
+@import "styles/util/base";
+
+$widthTextContainer: 30rem;
+.container {
+  width: $widthTextContainer;
+  display: flex;
+  flex-direction: column;
+
+  .containerLogo {
+    width: 100%;
+    height: 13rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .textTitle {
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .textDescription {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .containerLinks {
+    .containerNetworks {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 0.5rem;
+
+      .containerSocial {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 1rem;
+
+        .containerSocialLogo {
+          display: flex;
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 0.5rem;
+          position: relative;
+        }
+      }
+    }
+
+    .textSocialLink {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+      font-family: $fontFamilySecondary;
+    }
+  }
+}

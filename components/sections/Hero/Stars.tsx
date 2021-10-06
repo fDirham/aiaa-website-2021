@@ -24,19 +24,25 @@ export default function Stars({ className }: thisProps) {
     };
   }, []);
 
+  function randomStarPlacement() {
+    const randomTop = Math.random() * 100 + "vh";
+    const randomLeft = Math.random() * 100 + "vw";
+    const randomSize = Math.random() * 10 + 1 + "px";
+    const styleProp = {
+      top: randomTop,
+      left: randomLeft,
+      height: randomSize,
+      width: randomSize,
+    };
+
+    return styleProp;
+  }
   function resetStars() {
     const toReturn = [];
     for (let i = 0; i < numStaticStars; i++) {
       let className = `${styles.star}`;
-      const randomTop = Math.random() * 100 + "vh";
-      const randomLeft = Math.random() * 100 + "vw";
-      const randomSize = Math.random() * 10 + 1 + "px";
-      const styleProp = {
-        top: randomTop,
-        left: randomLeft,
-        height: randomSize,
-        width: randomSize,
-      };
+
+      const styleProp = randomStarPlacement();
       toReturn.push(
         <div className={className} style={styleProp} key={`star_${i}`}></div>
       );
@@ -48,15 +54,7 @@ export default function Stars({ className }: thisProps) {
     const toReturn = [];
     for (let i = 0; i < numDynamicStars; i++) {
       let className = `${styles.star}`;
-      const randomTop = Math.random() * 100 + "vh";
-      const randomLeft = Math.random() * 100 + "vw";
-      const randomSize = Math.random() * 10 + 1 + "px";
-      const styleProp = {
-        top: randomTop,
-        left: randomLeft,
-        height: randomSize,
-        width: randomSize,
-      };
+      const styleProp = randomStarPlacement();
 
       const randomAnim = Math.random() * 3;
       if (randomAnim < 1) className += ` ${styles.starAnimated1}`;
