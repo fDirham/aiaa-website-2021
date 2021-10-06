@@ -1,0 +1,44 @@
+@import "styles/util/base";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+
+  .imgContainer {
+    position: absolute;
+    width: 14rem;
+    height: 8rem;
+    border: 5px black solid;
+    border-radius: 0 0.8rem 0 0.8rem;
+    overflow: hidden;
+    transition: all 1s;
+  }
+
+  .imgContainer:hover {
+    z-index: 2 !important;
+    cursor: pointer;
+    transform: scale(1.2) !important;
+  }
+
+  $spacing: 6.7rem;
+  .imgContainer:nth-child(1) {
+    margin-left: 3rem;
+    transform: rotate(15deg);
+    z-index: 1;
+  }
+  .imgContainer:nth-child(2) {
+    margin-top: $spacing;
+    margin-left: -3rem;
+    border-radius: 0.8rem 0 0.8rem 0;
+    transform: rotate(-8deg);
+    z-index: 1;
+  }
+  .imgContainer:nth-child(3) {
+    margin-left: 3rem;
+    margin-top: $spacing * 2;
+    transform: rotate(5deg);
+    z-index: 1;
+  }
+}

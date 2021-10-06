@@ -8,7 +8,7 @@ import discordImg from "public/discord-logo.png";
 export default function HeroText() {
   return (
     <div className={styles.container}>
-      <div className={styles.containerLogo}>
+      <div className={styles.imgContainerLogo}>
         <Image
           src={logoImg}
           layout={"fill"}
@@ -16,16 +16,16 @@ export default function HeroText() {
           objectPosition={"left top"}
         />
       </div>
-      <div className={styles.textTitle}>
+      <h1 className={styles.textTitle}>
         American Institute of Aeronautics and Astronautics @ UCSD
-      </div>
+      </h1>
       <p className={styles.textDescription}>
         The premier networking and social club for aerospace enthusiasts
       </p>
       <div className={styles.containerLinks}>
         <div className={styles.containerNetworks}>
           <div className={styles.containerSocial}>
-            <div className={styles.containerSocialLogo}>
+            <div className={styles.imgContainerSocialLogo}>
               <Image
                 src={igImg}
                 layout={"fill"}
@@ -42,7 +42,7 @@ export default function HeroText() {
             </a>
           </div>
           <div className={styles.containerSocial}>
-            <div className={styles.containerSocialLogo}>
+            <div className={styles.imgContainerSocialLogo}>
               <Image
                 src={discordImg}
                 layout={"fill"}

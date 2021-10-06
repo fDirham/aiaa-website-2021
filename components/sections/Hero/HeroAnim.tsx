@@ -12,21 +12,30 @@ export default function HeroAnim() {
   const [center, setCenter] = useState<{ x: number; y: number }>();
 
   useEffect(() => {
-    function handleResize() {
+    function handleScreenChange() {
       resetCenter();
     }
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleScreenChange);
+    window.addEventListener("scroll", handleScreenChange);
 
     resetCenter();
+
+    return () => {
+      window.removeEventListener("resize", handleScreenChange);
+      window.removeEventListener("scroll", handleScreenChange);
+    };
   }, [earthRef]);
 
   function resetCenter() {
     if (!earthRef.current) return;
+    console.log(earthRef.current.getBoundingClientRect());
     const { x, y, width, height } = earthRef.current.getBoundingClientRect();
-    const centerX = x + width / 2;
-    const centerY = y + height / 2;
+    const centerX = x + window.scrollX + width / 2;
+    const centerY = y + window.scrollY + height / 2;
+    if (center && center.x === centerX && center.y === centerY) return;
     setCenter({ x: centerX, y: centerY });
   }
+
   return (
     <div className={styles.container}>
       {center && (
