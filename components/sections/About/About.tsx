@@ -4,7 +4,7 @@ import AboutImages from "./AboutImages";
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <div className={styles.containerContent}>
         <h2>About</h2>
         <div className={styles.containerMain}>

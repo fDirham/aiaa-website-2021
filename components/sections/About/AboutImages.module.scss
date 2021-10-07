@@ -14,17 +14,23 @@
     border-radius: 0 0.8rem 0 0.8rem;
     overflow: hidden;
     transition: all 1s;
+
+    .imgContainerWrapper {
+      position: relative;
+      width: $widthPics;
+      height: $heightPics;
+    }
   }
 
   .imgContainer:hover {
-    z-index: 2 !important;
+    z-index: 1 !important;
     transform: scale(1.2) !important;
   }
 
   $spacing: 6.5rem;
   .imgContainer:nth-child(1) {
     margin-left: 2rem;
-    z-index: 1;
+    z-index: 0;
   }
   .imgContainer:nth-child(2) {
     margin-top: $spacing;

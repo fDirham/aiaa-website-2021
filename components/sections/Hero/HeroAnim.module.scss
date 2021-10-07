@@ -2,6 +2,7 @@
 @import "./HeroText.module.scss";
 
 $sizeEarthImage: 12rem;
+$meteorSize: 40px;
 .container {
   width: calc($widthCenter - $widthTextContainer);
   display: flex;
@@ -12,12 +13,18 @@ $sizeEarthImage: 12rem;
 
   .meteor {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: $meteorSize;
+    height: $meteorSize;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
+
+    .imgContainer {
+      position: relative;
+      width: $meteorSize;
+      height: $meteorSize;
+    }
   }
 
   .meteor:hover {

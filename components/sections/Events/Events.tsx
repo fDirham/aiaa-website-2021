@@ -5,7 +5,7 @@ import EventsImages from "./EventsImages";
 
 export default function Events() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="events">
       <div className={styles.containerContent}>
         <div className={styles.containerText}>
           <h2>Upcoming Events</h2>

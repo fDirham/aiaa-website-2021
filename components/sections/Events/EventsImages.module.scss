@@ -15,6 +15,12 @@
     border-radius: 0 0.8rem 0 0.8rem;
     overflow: hidden;
     transition: all 1s;
+
+    .imgContainerWrapper {
+      position: relative;
+      width: $widthPics;
+      height: $heightPics;
+    }
   }
 
   .imgContainer:hover {

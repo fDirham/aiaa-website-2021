@@ -20,12 +20,14 @@ export default function AboutImages() {
         imgList.map((imgData) => {
           return (
             <div key={imgData.alt} className={`${styles.imgContainer}`}>
-              <Image
-                src={imgData.src}
-                layout={"fill"}
-                objectFit={"cover"}
-                objectPosition={"left top"}
-              />
+              <div className={`${styles.imgContainerWrapper}`}>
+                <Image
+                  src={imgData.src}
+                  layout={"fill"}
+                  objectFit={"cover"}
+                  objectPosition={"left top"}
+                />
+              </div>
             </div>
           );
         })}

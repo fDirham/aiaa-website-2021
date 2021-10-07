@@ -6,7 +6,7 @@ import HeroAnim from "./HeroAnim";
 
 export default function Hero() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="hero">
       <div className={styles.containerContent}>
         <HeroText />
         <HeroAnim />

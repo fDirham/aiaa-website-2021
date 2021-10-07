@@ -48,12 +48,14 @@ export default function HeroAnim() {
             transformOrigin: `center ${meteorDistance + meteorSize * 2}px`,
           }}
         >
-          <Image
-            src={imgRocket}
-            layout={"fill"}
-            objectFit={"scale-down"}
-            objectPosition={"left top"}
-          />
+          <div className={styles.imgContainer}>
+            <Image
+              src={imgRocket}
+              layout={"fill"}
+              objectFit={"scale-down"}
+              objectPosition={"left top"}
+            />
+          </div>
         </div>
       )}
       {center && (
@@ -65,12 +67,14 @@ export default function HeroAnim() {
             transformOrigin: `center ${meteorDistance + meteorSize}px`,
           }}
         >
-          <Image
-            src={imgPlane}
-            layout={"fill"}
-            objectFit={"scale-down"}
-            objectPosition={"left top"}
-          />
+          <div className={styles.imgContainer}>
+            <Image
+              src={imgPlane}
+              layout={"fill"}
+              objectFit={"scale-down"}
+              objectPosition={"left top"}
+            />
+          </div>
         </div>
       )}
       <div className={styles.imgContainerEarth} ref={earthRef}>

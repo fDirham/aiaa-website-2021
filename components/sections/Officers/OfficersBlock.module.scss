@@ -3,11 +3,11 @@
 $size: 12rem;
 
 .container:nth-child(3n - 2) {
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .container:nth-child(3n) {
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .container {

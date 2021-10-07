@@ -1,0 +1,40 @@
+@import "styles/util/base";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: $heightNavBar;
+  background-color: $colorAccent;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  .containerContent {
+    width: $widthCenter;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    height: 100%;
+
+    ul {
+      margin: 0;
+      padding: 0 1rem;
+
+      li {
+        display: inline;
+        margin: 0 1rem;
+        a {
+          font-family: $fontFamilyPrimary;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

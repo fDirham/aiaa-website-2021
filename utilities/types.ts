@@ -21,3 +21,8 @@ export type calendarEvent = {
   link?: string;
   linkText?: string;
 };
+
+export type navItem = {
+  label: string;
+  id: string;
+};
