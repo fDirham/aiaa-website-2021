@@ -5,7 +5,7 @@ type thisProps = {
   className?: any;
 };
 const numStaticStars = 100;
-const numDynamicStars = 40;
+const numDynamicStars = 30;
 const supernovaResetMs = 6000; // Sync with css duration
 export default function Stars({ className }: thisProps) {
   const [staticStars, setStaticStars] = useState<any[]>([]);

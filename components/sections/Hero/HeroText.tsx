@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./HeroText.module.scss";
 import Image from "next/image";
 import logoImg from "public/aiaa-logo.png";
@@ -6,6 +6,7 @@ import igImg from "public/ig-logo.png";
 import discordImg from "public/discord-logo.png";
 
 export default function HeroText() {
+  const [contactText, setContactText] = useState<string>();
   return (
     <div className={styles.container}>
       <div className={styles.imgContainerLogo}>
@@ -65,6 +66,15 @@ export default function HeroText() {
           target="blank"
         >
           Subscribe to our newsletter to keep up to date!
+        </a>
+        <a
+          className={styles.textContact}
+          href="mailto:aiaaucsd@ucsd.edu"
+          target="blank"
+          onMouseEnter={() => setContactText("aiaaucsd@ucsd.edu")}
+          onMouseLeave={() => setContactText(undefined)}
+        >
+          {contactText || "Contact Us"}
         </a>
       </div>
     </div>

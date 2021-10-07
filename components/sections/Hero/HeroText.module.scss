@@ -27,6 +27,8 @@ $widthTextContainer: 30rem;
   }
 
   .containerLinks {
+    display: flex;
+    flex-direction: column;
     .containerNetworks {
       display: flex;
       flex-direction: row;
@@ -53,6 +55,24 @@ $widthTextContainer: 30rem;
       font-weight: bold;
       text-decoration: underline;
       font-family: $fontFamilySecondary;
+    }
+
+    .textContact {
+      padding: 10px;
+      background-color: white;
+      text-decoration: none;
+      font-family: $fontFamilyPrimary;
+      border-radius: 4rem;
+      font-weight: bolder;
+      text-align: center;
+      width: 20rem;
+      margin-top: 1rem;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .textContact:hover {
+      transform: scale(1.2);
+      color: $colorAccent;
     }
   }
 }
