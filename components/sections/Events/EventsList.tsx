@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { calendarEvent } from "utilities/types";
+import EventsBlock from "./EventsBlock";
 import styles from "./EventsList.module.scss";
 
 const dummmyEvents: calendarEvent[] = [
   {
-    title: "First event ever",
+    title: "First Event",
     day: "Wednesday",
     date: "July 24th",
     timeStart: "6pm",
     timeEnd: "7pm",
-    location: "Your mom",
+    location: "Geisel 10th floor",
     link: "google.com",
-    linkText: "GOOGLE",
   },
   {
     title: "Event 2",
@@ -19,12 +19,12 @@ const dummmyEvents: calendarEvent[] = [
     date: "July 25th",
     timeStart: "4pm",
     timeEnd: "9pm",
-    location: "Your dads ass",
+    location: "Remote",
     link: "google.com",
-    linkText: "ph",
+    linkText: "Zoom link",
   },
   {
-    title: "Final Event",
+    title: "3rd Event",
     day: "Monday",
     date: "Aug 30th",
     timeStart: "1am",
@@ -42,32 +42,6 @@ export default function EventsList() {
         events.map((calEvent) => {
           return <EventsBlock key={calEvent.title} calendarEvent={calEvent} />;
         })}
-    </div>
-  );
-}
-
-type EventsBlockProps = {
-  calendarEvent: calendarEvent;
-};
-function EventsBlock({ calendarEvent }: EventsBlockProps) {
-  return (
-    <div className={styles.blockContainer}>
-      <h3 className={styles.title}>{calendarEvent.title}</h3>
-      <p className={styles.textDate}>
-        {calendarEvent.day +
-          ", " +
-          calendarEvent.date +
-          " @ " +
-          calendarEvent.timeStart +
-          " - " +
-          calendarEvent.timeEnd}
-      </p>
-      <p className={styles.textLocation}>{calendarEvent.location}</p>
-      {calendarEvent.link && (
-        <a className={styles.textLink} href={calendarEvent.link}>
-          {calendarEvent.linkText || "Learn more"}
-        </a>
-      )}
     </div>
   );
 }

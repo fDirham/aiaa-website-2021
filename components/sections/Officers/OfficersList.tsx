@@ -1,6 +1,6 @@
 import React from "react";
 import { officerData } from "utilities/types";
-import styles from "./Officers.module.scss";
+import styles from "./OfficersList.module.scss";
 import imgChairperson from "public/officers/carissa.jpg";
 import imgViceChairperson from "public/officers/ignatius.jpg";
 import imgWebmaster from "public/officers/fajar.png";
@@ -10,7 +10,6 @@ import imgDevelopmentCoord from "public/officers/seth.jpg";
 import imgGraduate from "public/officers/ross.jpg";
 import imgFaculty from "public/officers/mark.jpg";
 import OfficersBlock from "./OfficersBlock";
-import OfficersList from "./OfficersList";
 
 const officerList: officerData[] = [
   {
@@ -70,13 +69,14 @@ const officerList: officerData[] = [
     position: "Faculty Advisor",
   },
 ];
-export default function Officers() {
+
+export default function OfficersList() {
   return (
     <div className={styles.container}>
-      <div className={styles.containerContent}>
-        <h2>Officers</h2>
-        <OfficersList />
-      </div>
+      {officerList.map((officer) => {
+        return <OfficersBlock key={officer.position} officerData={officer} />;
+      })}
+      {officerList.length % 2 === 0 && <div className={styles.dummyDiv}></div>}
     </div>
   );
 }

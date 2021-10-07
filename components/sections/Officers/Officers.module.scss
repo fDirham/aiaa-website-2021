@@ -11,18 +11,5 @@
     width: $widthCenter;
     display: flex;
     flex-direction: column;
-
-    .containerBlocks {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-top: 2rem;
-      width: 100%;
-      flex-wrap: wrap;
-
-      .dummyDiv {
-        width: 33%;
-      }
-    }
   }
 }
