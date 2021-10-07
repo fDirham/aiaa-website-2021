@@ -28,7 +28,6 @@ export default function HeroAnim() {
 
   function resetCenter() {
     if (!earthRef.current) return;
-    console.log(earthRef.current.getBoundingClientRect());
     const { x, y, width, height } = earthRef.current.getBoundingClientRect();
     const centerX = x + window.scrollX + width / 2;
     const centerY = y + window.scrollY + height / 2;
