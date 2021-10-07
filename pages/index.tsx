@@ -1,6 +1,7 @@
 import About from "components/sections/About";
 import Events from "components/sections/Events";
 import Hero from "components/sections/Hero";
+import Officers from "components/sections/Officers";
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.scss";
 
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
       <Hero />
       <Events />
       <About />
+      <Officers />
     </div>
   );
 };

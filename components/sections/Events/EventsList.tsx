@@ -1,16 +1,6 @@
 import React, { useState } from "react";
+import { calendarEvent } from "utilities/types";
 import styles from "./EventsList.module.scss";
-
-type calendarEvent = {
-  title: string;
-  day: string;
-  date: string;
-  timeStart: string;
-  timeEnd: string;
-  location: string;
-  link?: string;
-  linkText?: string;
-};
 
 const dummmyEvents: calendarEvent[] = [
   {

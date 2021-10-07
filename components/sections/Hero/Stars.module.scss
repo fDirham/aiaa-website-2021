@@ -4,10 +4,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
   height: $heightHero;
-  overflow: hidden;
+  width: 100%;
   z-index: 0;
+  overflow: hidden;
 }
 
 .star {

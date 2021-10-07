@@ -10,7 +10,7 @@
     position: absolute;
     width: $widthPics;
     height: $heightPics;
-    border: 5px white solid;
+    border: $borderWidthImages white solid;
     border-radius: 0 0.8rem 0 0.8rem;
     overflow: hidden;
     transition: all 1s;
