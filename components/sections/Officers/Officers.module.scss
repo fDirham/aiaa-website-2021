@@ -5,13 +5,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
   background-color: white;
-  border-radius: 30% 35% 0 0;
 
   .containerContent {
     width: $widthCenter;
     display: flex;
     flex-direction: column;
   }
+}
+
+$heightPseudo: 10rem;
+$widthPseudo: 25px;
+.container::before {
+  content: "";
+  position: absolute;
+
+  z-index: -1;
+  background-color: transparent;
+  margin-top: -2rem - $heightPseudo;
+  height: $heightPseudo;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 20% 20%;
+  box-shadow: 0 3rem 0 0 white;
 }
