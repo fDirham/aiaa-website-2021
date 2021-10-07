@@ -1,12 +1,11 @@
 @import "styles/util/base";
 
 .container {
-  background-color: $colorAccent;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding: 5rem 0;
   color: white;
 
   .containerContent {

@@ -11,6 +11,7 @@
     width: $widthPics;
     height: $heightPics;
     border: $borderWidthImages $colorAccent solid;
+    background-color: $colorAccent;
     border-radius: 0 0.8rem 0 0.8rem;
     overflow: hidden;
     transition: all 1s;
@@ -18,7 +19,6 @@
 
   .imgContainer:hover {
     z-index: 2 !important;
-    cursor: pointer;
     transform: scale(1.2) !important;
   }
 

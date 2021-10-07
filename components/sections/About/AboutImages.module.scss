@@ -18,11 +18,10 @@
 
   .imgContainer:hover {
     z-index: 2 !important;
-    cursor: pointer;
     transform: scale(1.2) !important;
   }
 
-  $spacing: 7.5rem;
+  $spacing: 6.5rem;
   .imgContainer:nth-child(1) {
     margin-left: 2rem;
     z-index: 1;

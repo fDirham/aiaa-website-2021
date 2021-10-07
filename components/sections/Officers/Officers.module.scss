@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding: 3rem 0;
+  background-color: white;
+  border-radius: 30% 35% 0 0;
 
   .containerContent {
     width: $widthCenter;
