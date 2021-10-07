@@ -13,8 +13,7 @@ export type officerData = {
 
 export type calendarEvent = {
   title: string;
-  day: string;
-  date: string;
+  date: Date;
   timeStart: string;
   timeEnd: string;
   location: string;
