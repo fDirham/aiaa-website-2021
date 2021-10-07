@@ -1,21 +1,16 @@
 import React, { useEffect, useState } from "react";
-import styles from "./ImagesList.module.scss";
+import styles from "./AboutImages.module.scss";
 import Image from "next/image";
-import imgLaunch from "public/images/launch_1.jpeg";
 import imgJplSign from "public/images/jpl_tour_1.jpeg";
-import imgRobotThing from "public/images/jpl_tour_4.jpeg";
+import imgJplInside from "public/images/jpl_tour_2.jpg";
+import { imgData } from "utilities/types";
 
-type imgData = {
-  src: any;
-  alt: string;
-};
-export default function ImagesList() {
+export default function AboutImages() {
   const [imgList, setImgList] = useState<imgData[]>([]);
   useEffect(() => {
     setImgList([
-      { alt: "jpl", src: imgJplSign },
-      { alt: "robot", src: imgRobotThing },
-      { alt: "launch", src: imgLaunch },
+      { alt: "jpl-sign", src: imgJplSign },
+      { alt: "jpl-center", src: imgJplInside },
     ]);
   }, []);
 

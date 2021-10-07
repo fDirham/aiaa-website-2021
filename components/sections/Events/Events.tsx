@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Events.module.scss";
 import EventsList from "./EventsList";
-import ImagesList from "./ImagesList";
+import EventsImages from "./EventsImages";
 
 export default function Events() {
   return (
@@ -12,7 +12,7 @@ export default function Events() {
           <EventsList />
         </div>
         <div className={styles.containerImages}>
-          <ImagesList />
+          <EventsImages />
         </div>
       </div>
     </div>

@@ -1,0 +1,30 @@
+@import "styles/util/base";
+
+.container {
+  background-color: $colorAccent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+
+  .containerContent {
+    width: $widthCenter;
+    height: 100%;
+
+    .containerMain {
+      height: 2.2 * $heightPics;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: $widthPics * 1.5 auto;
+
+      .containerImages {
+        height: 100%;
+      }
+      .containerText {
+        font-size: large;
+      }
+    }
+  }
+}
