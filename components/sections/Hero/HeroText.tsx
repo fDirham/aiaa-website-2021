@@ -62,7 +62,7 @@ export default function HeroText() {
         </div>
         <a
           className={styles.textSocialLink}
-          href="https://forms.gle/GjCyE3k9SzhWq1YQA"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdxOkgPKbxlbyzd67oFrUZQKSFn6Y4dUycmmHv52hCLexv6sA/viewform"
           target="blank"
         >
           Subscribe to our newsletter to keep up to date!
