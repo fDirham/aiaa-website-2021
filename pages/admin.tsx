@@ -5,7 +5,7 @@ import { firebaseAuth } from "firebaseApp";
 import AddEvent from "components/admin/AddEvent";
 import SignIn from "components/admin/SignIn";
 
-export default function admin() {
+export default function AdminPage() {
   const [authenticated, setAuthenticated] = useState<boolean>(false);
   const checkAuthTimer = useRef<ReturnType<typeof setInterval>>();
   const { currentUser } = firebaseAuth;
