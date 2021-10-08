@@ -4,8 +4,9 @@ import { signOut } from "firebase/auth";
 import { firebaseAuth } from "firebaseApp";
 import AddEvent from "components/admin/AddEvent";
 import SignIn from "components/admin/SignIn";
+import { NextPage } from "next";
 
-export default function admin() {
+const admin: NextPage = () => {
   const [authenticated, setAuthenticated] = useState<boolean>(false);
   const checkAuthTimer = useRef<ReturnType<typeof setInterval>>();
   const { currentUser } = firebaseAuth;
@@ -36,4 +37,6 @@ export default function admin() {
       <AddEvent />
     </div>
   );
-}
+};
+
+export default admin;
