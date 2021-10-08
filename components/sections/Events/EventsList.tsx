@@ -28,7 +28,6 @@ export default function EventsList() {
         const eventData = doc.data();
         const newEvent = { ...eventData, date: eventData.date.toDate() };
         newEvents.push(newEvent as calendarEvent);
-        console.log(newEvent);
       });
       setEvents(newEvents);
     });
