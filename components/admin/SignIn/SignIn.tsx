@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { firebaseAuth } from "firebaseApp";
 import styles from "./SignIn.module.scss";
 
-export default function admin() {
+export default function SignIn() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
