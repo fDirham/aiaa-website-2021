@@ -17,7 +17,6 @@ const Home: NextPage = () => {
           name="description"
           content="American Institute of Aeronautics and Astronautics, AIAA, at UCSD. We are a student club for aerospace enthusiasts looking to have fun whilst developing their professional careers."
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
       <Hero />
@@ -25,6 +24,11 @@ const Home: NextPage = () => {
       <Events />
       <About />
       <Officers />
+      <footer>
+        <p>Contact us at aiaaucsd@ucsd.edu</p>
+        <br />
+        <p>Website was made by FBD in 10/2021</p>
+      </footer>
     </div>
   );
 };
