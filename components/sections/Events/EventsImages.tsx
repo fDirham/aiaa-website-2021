@@ -28,6 +28,7 @@ export default function EventsImages() {
                   layout={"fill"}
                   objectFit={"cover"}
                   objectPosition={"left top"}
+                  placeholder="blur"
                 />
               </div>
             </div>

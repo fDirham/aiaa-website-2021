@@ -15,6 +15,7 @@ export default function HeroText() {
           layout={"fill"}
           objectFit={"scale-down"}
           objectPosition={"left top"}
+          placeholder="blur"
         />
       </div>
       <h1 className={styles.textTitle}>
@@ -32,6 +33,7 @@ export default function HeroText() {
                 layout={"fill"}
                 objectFit={"scale-down"}
                 objectPosition={"50% 50%"}
+                placeholder="blur"
               />
             </div>
             <a
@@ -49,6 +51,7 @@ export default function HeroText() {
                 layout={"fill"}
                 objectFit={"scale-down"}
                 objectPosition={"50% 50%"}
+                placeholder="blur"
               />
             </div>
             <a
