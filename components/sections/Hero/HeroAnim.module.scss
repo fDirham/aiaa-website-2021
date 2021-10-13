@@ -4,6 +4,9 @@
 $sizeEarthImage: 12rem;
 $meteorSize: 40px;
 .container {
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
   width: calc($widthCenter - $widthTextContainer);
   display: flex;
   flex-direction: column;
