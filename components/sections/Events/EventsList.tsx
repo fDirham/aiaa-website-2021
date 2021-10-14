@@ -39,7 +39,7 @@ export default function EventsList() {
 
   return (
     <div className={styles.container}>
-      {events.length &&
+      {!!events.length &&
         events.map((calEvent) => {
           return <EventsBlock key={calEvent.title} calendarEvent={calEvent} />;
         })}

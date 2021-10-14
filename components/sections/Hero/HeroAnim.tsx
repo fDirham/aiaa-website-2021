@@ -54,6 +54,7 @@ export default function HeroAnim() {
               layout={"fill"}
               objectFit={"scale-down"}
               objectPosition={"left top"}
+              placeholder="blur"
             />
           </div>
         </div>
@@ -73,6 +74,7 @@ export default function HeroAnim() {
               layout={"fill"}
               objectFit={"scale-down"}
               objectPosition={"left top"}
+              placeholder="blur"
             />
           </div>
         </div>
@@ -83,6 +85,7 @@ export default function HeroAnim() {
           layout={"fill"}
           objectFit={"scale-down"}
           objectPosition={"left top"}
+          placeholder="blur"
         />
       </div>
     </div>

@@ -16,6 +16,7 @@ export default function OfficersBlock({ officerData }: OfficersBlockProps) {
             layout={"fill"}
             objectFit={"cover"}
             objectPosition={"left top"}
+            placeholder="blur"
           />
         </div>
         <p className={styles.textPosition}>{officerData.position}</p>

@@ -26,6 +26,7 @@ export default function AboutImages() {
                   layout={"fill"}
                   objectFit={"cover"}
                   objectPosition={"left top"}
+                  placeholder="blur"
                 />
               </div>
             </div>

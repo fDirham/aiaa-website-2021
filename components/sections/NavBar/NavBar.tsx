@@ -34,6 +34,7 @@ export default function NavBar() {
             layout={"fill"}
             objectFit={"scale-down"}
             objectPosition={"center center"}
+            placeholder="blur"
           />
         </div>
         <ul>
