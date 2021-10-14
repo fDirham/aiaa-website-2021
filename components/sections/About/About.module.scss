@@ -12,12 +12,12 @@
     width: $widthCenter;
     height: 100%;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $ssTablet) {
       width: 100%;
+      padding: 0 2rem;
     }
 
     .containerMain {
-      height: 2.2 * $heightPics;
       margin-top: 2rem;
       display: grid;
       grid-template-columns: $widthPics * 1.5 auto;

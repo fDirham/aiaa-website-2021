@@ -15,7 +15,7 @@
     overflow: hidden;
     transition: all 1s;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $ssTablet) {
       position: relative;
     }
 
@@ -34,9 +34,15 @@
   $spacing: 6.5rem;
   .imgContainer:nth-child(1) {
     margin-left: 2rem;
+
     z-index: 0;
   }
   .imgContainer:nth-child(2) {
+    margin-top: $spacing;
+    @media only screen and (max-width: $ssTablet) {
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+    }
     border-radius: 0.8rem 0 0.8rem 0;
     z-index: 0;
   }

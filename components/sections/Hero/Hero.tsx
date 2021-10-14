@@ -8,7 +8,7 @@ export default function Hero() {
     <div className={styles.container} id="hero">
       <div className={styles.containerContent}>
         <HeroText />
-        {/* <HeroAnim /> */}
+        <HeroAnim />
       </div>
     </div>
   );

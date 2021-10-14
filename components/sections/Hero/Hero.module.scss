@@ -16,7 +16,8 @@
     flex-direction: row;
     z-index: 1;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $ssTablet) {
+      padding: 0 2rem;
       width: 100%;
     }
 
