@@ -9,6 +9,7 @@ import imgSpeakerCoord from "public/officers/brandon.jpeg";
 import imgDevelopmentCoord from "public/officers/seth.jpg";
 import imgGraduate from "public/officers/ross.jpg";
 import imgFaculty from "public/officers/mark.jpg";
+import imgBlank from "public/officers/blank.png";
 import OfficersBlock from "./OfficersBlock";
 
 const officerList: officerData[] = [
@@ -54,6 +55,14 @@ const officerList: officerData[] = [
     imgSrc: imgDevelopmentCoord,
     position: "Development Coordinator",
   },
+  {
+    name: "Joshua Cantrell",
+    pronouns: "He/Him",
+    email: "jrcantre@ucsd.edu",
+    imgSrc: imgBlank,
+    position: "Treasurer",
+  },
+
   {
     name: "Ross Turner",
     pronouns: "He/Him",
