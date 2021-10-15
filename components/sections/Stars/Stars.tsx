@@ -4,8 +4,8 @@ import styles from "./Stars.module.scss";
 type thisProps = {
   className?: any;
 };
-const numStaticStars = 50;
-const numDynamicStars = 10;
+const numStaticStars = 40;
+const numDynamicStars = 30;
 const supernovaResetMs = 6000; // Sync with css duration
 export default function Stars({ className }: thisProps) {
   const [staticStars, setStaticStars] = useState<any[]>([]);
