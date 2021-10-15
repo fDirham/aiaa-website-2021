@@ -18,7 +18,6 @@ $widthTextContainer: 30rem;
 
     @media only screen and (max-width: $ssMobile) {
       height: 8rem;
-      margin-bottom: 2rem;
     }
   }
 
@@ -84,7 +83,6 @@ $widthTextContainer: 30rem;
     }
 
     .textContact:hover {
-      transform: scale(1.2);
       color: $colorAccent;
     }
   }

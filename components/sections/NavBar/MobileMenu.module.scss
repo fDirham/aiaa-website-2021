@@ -1,0 +1,43 @@
+@import "styles/util/base";
+.container {
+  width: 100%;
+  text-align: center;
+  color: white;
+
+  .textHamburger {
+    font-family: $fontFamilyPrimary;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+    z-index: 101;
+    background-color: darken($colorAccent, 3);
+  }
+
+  .list {
+    background-color: $colorAccent;
+    height: 100vh;
+
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+
+      li {
+        display: inline;
+        margin: 0 1rem;
+        padding: 1rem;
+        a {
+          font-family: $fontFamilyPrimary;
+          font-size: 2rem;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+          opacity: 1;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
