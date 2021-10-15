@@ -22,6 +22,7 @@
     @media only screen and (max-width: $ssTablet) {
       width: 100%;
       padding: 0 2rem;
+      flex-direction: column;
     }
 
     .containerText {
@@ -29,9 +30,17 @@
       padding-right: 10%;
       display: flex;
       flex-direction: column;
+
+      @media only screen and (max-width: $ssTablet) {
+        width: 100%;
+      }
     }
     .containerImages {
       width: 40%;
+
+      @media only screen and (max-width: $ssTablet) {
+        width: 100%;
+      }
     }
   }
 }

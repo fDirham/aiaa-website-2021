@@ -6,6 +6,11 @@
   flex-direction: column;
   padding: 2rem 0;
 
+  @media only screen and (max-width: $ssTablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .imgContainer {
     position: absolute;
     width: $widthPics;
@@ -16,8 +21,10 @@
     overflow: hidden;
     transition: all 1s;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $ssTablet) {
       position: relative;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
     }
 
     .imgContainerWrapper {
@@ -32,23 +39,25 @@
     transform: scale(1.2) !important;
   }
 
-  $spacing: 6.7rem;
-  .imgContainer:nth-child(1) {
-    margin-left: 3rem;
-    transform: rotate(15deg);
-    z-index: 1;
-  }
-  .imgContainer:nth-child(2) {
-    margin-top: $spacing;
-    margin-left: -3rem;
-    border-radius: 0.8rem 0 0.8rem 0;
-    transform: rotate(-8deg);
-    z-index: 1;
-  }
-  .imgContainer:nth-child(3) {
-    margin-left: 3rem;
-    margin-top: $spacing * 2;
-    transform: rotate(5deg);
-    z-index: 1;
+  @media only screen and (min-width: $ssTablet) {
+    $spacing: 6.7rem;
+    .imgContainer:nth-child(1) {
+      margin-left: 3rem;
+      transform: rotate(15deg);
+      z-index: 1;
+    }
+    .imgContainer:nth-child(2) {
+      margin-top: $spacing;
+      margin-left: -3rem;
+      border-radius: 0.8rem 0 0.8rem 0;
+      transform: rotate(-8deg);
+      z-index: 1;
+    }
+    .imgContainer:nth-child(3) {
+      margin-left: 3rem;
+      margin-top: $spacing * 2;
+      transform: rotate(5deg);
+      z-index: 1;
+    }
   }
 }

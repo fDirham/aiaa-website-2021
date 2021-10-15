@@ -2,12 +2,14 @@
 
 $size: 12rem;
 
-.container:nth-child(3n - 2) {
-  justify-content: flex-start;
-}
+@media only screen and (min-width: $ssMobile) {
+  .container:nth-child(3n - 2) {
+    justify-content: flex-start;
+  }
 
-.container:nth-child(3n) {
-  justify-content: flex-end;
+  .container:nth-child(3n) {
+    justify-content: flex-end;
+  }
 }
 
 .container {
@@ -16,6 +18,10 @@ $size: 12rem;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: $ssMobile) {
+    width: 100%;
+  }
 
   .containerWrapper {
     .imgContainer {

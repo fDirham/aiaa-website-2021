@@ -22,16 +22,25 @@
       display: grid;
       grid-template-columns: $widthPics * 1.5 auto;
 
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: $ssTablet) {
         display: flex;
         flex-direction: column;
       }
 
       .containerImages {
         height: 100%;
+
+        @media only screen and (max-width: $ssTablet) {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
       }
       .containerText {
         font-size: large;
+
+        @media only screen and (max-width: $ssTablet) {
+          width: 100%;
+        }
       }
     }
   }
