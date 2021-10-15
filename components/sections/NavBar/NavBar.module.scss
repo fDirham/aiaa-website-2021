@@ -20,7 +20,7 @@
     justify-content: space-between;
     height: 100%;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $ssTablet) {
       width: 100%;
     }
 
@@ -28,7 +28,7 @@
       position: relative;
       width: 2.4rem;
       height: 2.4rem;
-      margin: 0 0 0.2rem 0.2rem;
+      margin: 0 0 0.2rem 1rem;
     }
     ul {
       margin: 0;
