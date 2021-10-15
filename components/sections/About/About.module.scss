@@ -12,17 +12,35 @@
     width: $widthCenter;
     height: 100%;
 
+    @media only screen and (max-width: $ssTablet) {
+      width: 100%;
+      padding: 0 2rem;
+    }
+
     .containerMain {
-      height: 2.2 * $heightPics;
       margin-top: 2rem;
       display: grid;
       grid-template-columns: $widthPics * 1.5 auto;
 
+      @media only screen and (max-width: $ssTablet) {
+        display: flex;
+        flex-direction: column;
+      }
+
       .containerImages {
         height: 100%;
+
+        @media only screen and (max-width: $ssTablet) {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
       }
       .containerText {
         font-size: large;
+
+        @media only screen and (max-width: $ssTablet) {
+          width: 100%;
+        }
       }
     }
   }

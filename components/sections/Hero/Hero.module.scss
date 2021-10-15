@@ -8,7 +8,11 @@
   justify-content: center;
   overflow: hidden;
   height: $heightHero;
-  margin-top: -$heightNavBar;
+
+  @media only screen and (max-width: $ssMobile) {
+    padding: $heightNavBar + 1rem 0;
+    height: auto;
+  }
 
   .containerContent {
     width: $widthCenter;
@@ -16,57 +20,9 @@
     flex-direction: row;
     z-index: 1;
 
-    .containerText {
-      width: 30rem;
-      display: flex;
-      flex-direction: column;
-
-      .containerLogo {
-        width: 100%;
-        height: 13rem;
-        margin-bottom: 1rem;
-        position: relative;
-      }
-
-      .textTitle {
-        color: white;
-        font-size: 2rem;
-        font-weight: 800;
-        margin-bottom: 1rem;
-      }
-
-      .textDescription {
-        color: white;
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .containerLinks {
-        .containerNetworks {
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 0.5rem;
-
-          .containerSocial {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-right: 1rem;
-
-            .containerSocialLogo {
-              display: flex;
-              width: 1.5rem;
-              height: 1.5rem;
-              margin-right: 0.5rem;
-              position: relative;
-            }
-          }
-        }
-
-        .textSocialLink {
-          color: white;
-        }
-      }
+    @media only screen and (max-width: $ssTablet) {
+      padding: 0 2rem;
+      width: 100%;
     }
   }
 }

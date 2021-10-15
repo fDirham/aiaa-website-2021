@@ -6,6 +6,11 @@
   flex-direction: column;
   height: 100%;
 
+  @media only screen and (max-width: $ssTablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .imgContainer {
     position: absolute;
     width: $widthPics;
@@ -14,6 +19,12 @@
     border-radius: 0 0.8rem 0 0.8rem;
     overflow: hidden;
     transition: all 1s;
+
+    @media only screen and (max-width: $ssTablet) {
+      position: relative;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
 
     .imgContainerWrapper {
       position: relative;
@@ -27,14 +38,21 @@
     transform: scale(1.2) !important;
   }
 
-  $spacing: 6.5rem;
-  .imgContainer:nth-child(1) {
-    margin-left: 2rem;
-    z-index: 0;
-  }
-  .imgContainer:nth-child(2) {
-    margin-top: $spacing;
-    border-radius: 0.8rem 0 0.8rem 0;
-    z-index: 0;
+  @media only screen and (min-width: $ssTablet) {
+    $spacing: 6.5rem;
+    .imgContainer:nth-child(1) {
+      margin-left: 2rem;
+
+      z-index: 0;
+    }
+    .imgContainer:nth-child(2) {
+      margin-top: $spacing;
+      @media only screen and (max-width: $ssTablet) {
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+      }
+      border-radius: 0.8rem 0 0.8rem 0;
+      z-index: 0;
+    }
   }
 }
