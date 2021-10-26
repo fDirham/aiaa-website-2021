@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./HeroAnim.module.scss";
-import Image from "next/image";
 import imgEarth from "public/earth.png";
 import imgRocket from "public/rocket.png";
 import imgPlane from "public/plane.png";
@@ -8,7 +7,7 @@ import imgPlane from "public/plane.png";
 const meteorSize = 40;
 const meteorDistance = 110;
 export default function HeroAnim() {
-  const earthRef = useRef<HTMLDivElement>(null);
+  const earthRef = useRef<HTMLImageElement>(null);
   const [center, setCenter] = useState<{ x: number; y: number }>();
 
   useEffect(() => {
@@ -48,15 +47,7 @@ export default function HeroAnim() {
             transformOrigin: `center ${meteorDistance + meteorSize * 2}px`,
           }}
         >
-          <div className={styles.imgContainer}>
-            <Image
-              src={imgRocket}
-              layout={"fill"}
-              objectFit={"scale-down"}
-              objectPosition={"left top"}
-              placeholder="blur"
-            />
-          </div>
+          <img src={"rocket.png"} className={styles.imgContainer} />
         </div>
       )}
       {center && (
@@ -68,26 +59,14 @@ export default function HeroAnim() {
             transformOrigin: `center ${meteorDistance + meteorSize}px`,
           }}
         >
-          <div className={styles.imgContainer}>
-            <Image
-              src={imgPlane}
-              layout={"fill"}
-              objectFit={"scale-down"}
-              objectPosition={"left top"}
-              placeholder="blur"
-            />
-          </div>
+          <img src={"plane.png"} className={styles.imgContainer} />
         </div>
       )}
-      <div className={styles.imgContainerEarth} ref={earthRef}>
-        <Image
-          src={imgEarth}
-          layout={"fill"}
-          objectFit={"scale-down"}
-          objectPosition={"left top"}
-          placeholder="blur"
-        />
-      </div>
+      <img
+        src={"earth.png"}
+        className={styles.imgContainerEarth}
+        ref={earthRef}
+      />
     </div>
   );
 }

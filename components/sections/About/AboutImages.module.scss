@@ -19,6 +19,7 @@
     border-radius: 0 0.8rem 0 0.8rem;
     overflow: hidden;
     transition: all 1s;
+    display: flex;
 
     @media only screen and (max-width: $ssTablet) {
       position: relative;
@@ -26,10 +27,10 @@
       margin-bottom: 1rem;
     }
 
-    .imgContainerWrapper {
-      position: relative;
+    .img {
       width: $widthPics;
       height: $heightPics;
+      object-fit: cover;
     }
   }
 

@@ -27,6 +27,7 @@ $meteorSize: 40px;
       position: relative;
       width: $meteorSize;
       height: $meteorSize;
+      object-fit: scale-down;
     }
   }
 

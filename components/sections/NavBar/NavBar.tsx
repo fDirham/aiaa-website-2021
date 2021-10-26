@@ -2,8 +2,6 @@ import { useRouter } from "next/dist/client/router";
 import React, { useEffect, useState } from "react";
 import { navItem } from "utilities/types";
 import styles from "./NavBar.module.scss";
-import Image from "next/image";
-import logoImg from "public/short-aiaa-logo.png";
 import useDeviceType from "hooks/useDeviceType";
 import MobileMenu from "./MobileMenu";
 
@@ -41,15 +39,10 @@ export default function NavBar() {
           <MobileMenu navList={navList} />
         ) : (
           <>
-            <div className={styles.imgContainerLogo}>
-              <Image
-                src={logoImg}
-                layout={"fill"}
-                objectFit={"scale-down"}
-                objectPosition={"center center"}
-                placeholder="blur"
-              />
-            </div>
+            <img
+              src={"short-aiaa-logo.png"}
+              className={styles.imgContainerLogo}
+            />
             <ul>
               {navList.length &&
                 navList.map((item) => {
