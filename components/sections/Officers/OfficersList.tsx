@@ -10,6 +10,7 @@ import imgDevelopmentCoord from "public/officers/seth.jpg";
 import imgGraduate from "public/officers/ross.jpg";
 import imgFaculty from "public/officers/mark.jpg";
 import imgTreasurer from "public/officers/josh.png";
+import imgEDICoord from "public/officers/andres.jpg";
 import imgBlank from "public/officers/blank.png";
 import OfficersBlock from "./OfficersBlock";
 
@@ -36,6 +37,20 @@ const officerList: officerData[] = [
     position: "Webmaster",
   },
   {
+    name: "Joshua Cantrell",
+    pronouns: "He/Him",
+    email: "jrcantre@ucsd.edu",
+    imgSrc: imgTreasurer,
+    position: "Treasurer",
+  },
+  {
+    name: "Nafanil Ceshkovsky",
+    pronouns: "He/Him",
+    email: "naceshko@ucsd.edu",
+    imgSrc: imgBlank,
+    position: "Secretary",
+  },
+  {
     name: "Bryan Cheng",
     pronouns: "He/Him",
     email: "c9cheng@ucsd.edu",
@@ -57,13 +72,26 @@ const officerList: officerData[] = [
     position: "Development Coordinator",
   },
   {
-    name: "Joshua Cantrell",
+    name: "Andres Hernandez",
     pronouns: "He/Him",
-    email: "jrcantre@ucsd.edu",
-    imgSrc: imgTreasurer,
-    position: "Treasurer",
+    email: "anh009@ucsd.edu",
+    imgSrc: imgEDICoord,
+    position: "EDI Coordinator",
   },
-
+  {
+    name: "Sakshi Patel",
+    pronouns: "She/Her",
+    email: "sap020@ucsd.edu",
+    imgSrc: imgBlank,
+    position: "Social/Outreach Chair",
+  },
+  {
+    name: "Sherry Tao",
+    pronouns: "She/Her",
+    email: "s2tao@ucsd.edu",
+    imgSrc: imgBlank,
+    position: "Social/Outreach Chair",
+  },
   {
     name: "Ross Turner",
     pronouns: "He/Him",
