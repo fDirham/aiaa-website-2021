@@ -8,9 +8,12 @@ export default function SignIn() {
   const [password, setPassword] = useState<string>("");
 
   async function handleSubmit(e?: any) {
-    if (e) e.preventDefault();
+    e.preventDefault();
 
-    if (!email || !password) window.alert("Fill in all fields!");
+    if (!email || !password) {
+      window.alert("Fill in all fields!");
+      return;
+    }
 
     try {
       const signInRes = await signInWithEmailAndPassword(
@@ -40,7 +43,7 @@ export default function SignIn() {
         placeholder={"password"}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleSubmit}>submit</button>
+      <button>submit</button>
     </form>
   );
 }
