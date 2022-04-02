@@ -8,6 +8,7 @@ export default function SignIn() {
   const [password, setPassword] = useState<string>("");
 
   async function handleSubmit(e?: any) {
+    console.log(e);
     e.preventDefault();
 
     if (!email || !password) {
@@ -16,11 +17,7 @@ export default function SignIn() {
     }
 
     try {
-      const signInRes = await signInWithEmailAndPassword(
-        firebaseAuth,
-        email,
-        password
-      );
+      await signInWithEmailAndPassword(firebaseAuth, email, password);
     } catch (err: any) {
       window.alert(
         "Incorrect credentials. Try again. Also, check your internet."
